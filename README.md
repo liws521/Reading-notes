@@ -19,3 +19,6 @@
 
 ## 网络小说
 - http://www.imayitxt.com/
+
+## pages
+- https://liws521.github.io/Reading-notes/
