@@ -1,25 +1,26 @@
 // 把代码放在块里, 用let声明块作用域的变量
 // 避免与其他js中的变量重名
-{
+// 这种方式不行, Mac的Safari
+// {
     // 球坐标系的半径radius
-    let radius = 150;
+    var radius = 150;
     // 为每一个超链接a创建一个oTag对象, 存储在这个mcList数组里
-    let mcList = [];
+    var mcList = [];
     // 球是否处于激活状态
-    let active = false;
+    var active = false;
     // 存储上次的旋转角度, 形成渐渐停止效果
-    let lasta = 1;
-    let lastb = 1;
+    var lasta = 1;
+    var lastb = 1;
     // distribution, 决定是否按球形均匀分布, 不然会随机成一个分布
-    let distr = true;
+    var distr = true;
     // 控制球的旋转速度, 鼠标轻微动一点对旋转角度的影响大不大
-    let tspeed = 10;
+    var tspeed = 10;
     // 把鼠标实际物理坐标 -> 相对oDiv正中心的x/y的值
-    let mX = 0;
-    let mY = 0;
+    var mX = 0;
+    var mY = 0;
     // tagsList对象和里面的多个超链接对象
-    let oDiv = null;
-    let aA = null;
+    var oDiv = null;
+    var aA = null;
 
     window.onload = function() {
         var i = 0;
@@ -228,4 +229,4 @@
         sc = Math.sin(c * dtr);
         cc = Math.cos(c * dtr);
     }
-}
+// }
